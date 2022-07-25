@@ -136,7 +136,7 @@ body #section-one:before {
 body #side-contact {
   position: fixed;
   left: 0;
-  top: 25%;
+  top: 20%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -189,5 +189,30 @@ body #section-two main {
   color: white;
 }
 body #section-two main p {
-  padding: 30px 0;
+  padding: 50px 0;
+}
+body #section-two main .to-do-card-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+body #section-two main .to-do-card-container .to-do-card-wrapper {
+  width: 30%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+}
+body #section-two main .to-do-card-container .to-do-card-wrapper .card-image img {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+body #section-two main .to-do-card-container .to-do-card-wrapper .card-title {
+  padding: 0 10px;
+  margin: 10px 0;
+}
+body #section-two main .to-do-card-container .to-do-card-wrapper .card-txt {
+  padding: 0 10px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=main-styles.css.map */
