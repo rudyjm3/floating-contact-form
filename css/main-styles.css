@@ -195,7 +195,7 @@ body #side-contact .form-wrapper {
   background-color: white;
   padding: 20px 15px;
   width: 350px;
-  transition:cubic-bezier(1, 0, 0, 1) 1s ease-in-out;
+  transition: all 1s ease-in-out;
   z-index: 1;
 }
 body #side-contact .form-wrapper .form-header {

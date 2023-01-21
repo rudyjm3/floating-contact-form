@@ -6,11 +6,12 @@ let closeBtn = document.getElementById('close-form-button');
 
 closeBtn.addEventListener('click', () => {
    formContainer.classList.toggle('.active');
-
+   alert("1st event listener ran");
 });
 
 contactBtn.addEventListener('click', () => {
    formContainer.classList.toggle('.active');
+   alert("2nd event listener ran");
 });
 
 
