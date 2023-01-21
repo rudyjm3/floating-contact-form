@@ -294,6 +294,10 @@ body #side-contact .form-wrapper #side-contact-form #form-submit-btn .ripple-eff
     transform: scale(10);
   }
 }
+/* FORM TOGGLE CLASS */
+.active {
+   left: 60px;
+}
 body #section-two main {
   color: white;
 }
