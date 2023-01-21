@@ -61,6 +61,7 @@ body{
       justify-content: center;
       flex-direction: column;
       width: 60px;
+      z-index: 1;
       
       span{
          transform: rotate(90deg);
@@ -107,14 +108,17 @@ body{
          background-color: #0077b5;
       }
       //  START FORM STYLING  //
+      
       .form-wrapper{
          position: relative;
          top: -468px;
-         left: 60px;
+         left: -410px;
          border-radius: 5px;
          background-color: white;
          padding: 20px 15px;
          width: 350px;
+         transition: cubic-bezier(1, 0, 0, 1) 1s ease-in-out;
+         z-index: 2;
          .form-header{
             display: flex;
             justify-content: space-between;
@@ -125,7 +129,7 @@ body{
                font-weight: 500;
                color:#6D61D8
             }
-            .close-form{
+            #close-form-btn {
                height: 19px;
                border: none;
                background-color: transparent;
@@ -209,6 +213,11 @@ body{
          }
       }
       //  END FORM STYLING  //
+      // FORM TOGGLE CLASSES //
+      .active {
+         top: -468px;
+         left: 60px;
+      }
    }
    // END SIDE CONTACT DIV #############
 

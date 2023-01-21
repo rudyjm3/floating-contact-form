@@ -1,4 +1,19 @@
 
+// FORM  TOGGLE
+let formContainer =  document.querySelector('.form-wrapper');
+let contactBtn = document.getElementByI('side-contact-form-tab');
+let closeBtn = document.getElementById('close-form-button');
+
+closeBtn.addEventListener('click', () => {
+   formContainer.classList.toggle('.active');
+
+});
+
+contactBtn.addEventListener('click', () => {
+   formContainer.classList.toggle('.active');
+});
+
+
 
 // CONTACT FORM SUBMIT BUTTON RIPPLE EFFECT
 const form_submit_btn = document.getElementById("form-submit-btn");
