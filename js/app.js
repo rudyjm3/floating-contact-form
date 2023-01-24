@@ -2,7 +2,7 @@
 // FORM  TOGGLE
 let formContainer =  document.querySelector('.form-wrapper');
 let contactBtn = document.getElementById('side-contact-form-tab');
-let closeBtn = document.getElementById('close-form-button');
+let closeBtn = document.getElementById('close-form-btn');
 
 closeBtn.addEventListener('click', () => {
    formContainer.classList.toggle('.active');
