@@ -5,13 +5,13 @@ let contactBtn = document.getElementById('side-contact-form-tab');
 let closeBtn = document.getElementById('close-form-btn');
 
 closeBtn.addEventListener('click', () => {
-   formContainer.classList.toggle('.active');
-   alert("1st event listener ran");
+   formContainer.classList.toggle('active');
+   // alert("1st event listener ran");
 });
 
 contactBtn.addEventListener('click', () => {
-   formContainer.classList.toggle('.active');
-   alert("2nd event listener ran");
+   formContainer.classList.toggle('active');
+   // alert("2nd event listener ran");
 });
 
 

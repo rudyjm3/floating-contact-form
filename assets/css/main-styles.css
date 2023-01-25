@@ -189,13 +189,14 @@ body #side-contact #side-linkedin-tab {
 }
 body #side-contact .form-wrapper {
   position: relative;
-  top: -468px;
+  top: -450px;
   left: -410px;
   border-radius: 5px;
   background-color: white;
   padding: 20px 15px;
   width: 350px;
-  transition: all 1s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   z-index: 1;
 }
 body #side-contact .form-wrapper .form-header {
@@ -262,8 +263,8 @@ body #side-contact .form-wrapper #side-contact-form #form-submit-btn {
 }
 body #side-contact .form-wrapper #side-contact-form #form-submit-btn .ripple-effect {
   position: absolute;
-  border-radius: 50%;
   /* To make it round */
+  border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.3);
   width: 100px;
   height: 100px;
@@ -294,8 +295,8 @@ body #side-contact .form-wrapper #side-contact-form #form-submit-btn .ripple-eff
     transform: scale(10);
   }
 }
-body #side-contact .active {
-  left: 60px;
+body .active {
+  left: 60px !important;
 }
 body #section-two main {
   color: white;
@@ -306,6 +307,7 @@ body #section-two main p {
 body #section-two main .to-do-card-container {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
@@ -315,6 +317,7 @@ body #section-two main .to-do-card-container .to-do-card-wrapper {
   height: 100%;
   border-radius: 5px;
   background-color: cornflowerblue;
+  margin-bottom: 30px;
 }
 body #section-two main .to-do-card-container .to-do-card-wrapper .card-image img {
   border-top-right-radius: 5px;

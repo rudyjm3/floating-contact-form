@@ -111,13 +111,14 @@ body{
       
       .form-wrapper{
          position: relative;
-         top: -468px;
+         top: -450px;
          left: -410px;
          border-radius: 5px;
          background-color: white;
          padding: 20px 15px;
          width: 350px;
-         transition: all 1s ease-in-out;
+         transition: all 0.8s ease-in-out;
+         transition-timing-function: cubic-bezier(0.68,-0.55,0.27,1.55);
          z-index: 1;
          .form-header{
             display: flex;
@@ -183,10 +184,9 @@ body{
                overflow: hidden;
                .ripple-effect{
                   position: absolute;
-                  border-radius: 50%;
                   /* To make it round */
+                  border-radius: 50%;
                   background-color: rgba(0, 0, 0, 0.3);
-            
                   width: 100px;
                   height: 100px;
                   margin-top: -50px;
@@ -213,13 +213,14 @@ body{
          }
       }
       //  END FORM STYLING  //
-      // FORM TOGGLE CLASSES //
-      .active {
-         left: 60px;
-      }
    }
    // END SIDE CONTACT DIV #############
 
+   // FORM TOGGLE CLASSES //
+   .active {
+      left: 60px !important;
+   }
+   // END TOGGLE CLASS 
    #section-two{
 
       main{
@@ -231,6 +232,7 @@ body{
          .to-do-card-container{
             width: 100%;
             display: flex;
+            flex-wrap: wrap;
             justify-content:space-between;
             align-items: center;
             margin-bottom: 30px;
@@ -240,6 +242,7 @@ body{
                height: 100%;
                border-radius: 5px;
                background-color: cornflowerblue;
+               margin-bottom: 30px;
 
                .card-image{
                   img{
